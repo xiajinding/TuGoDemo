@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerSecond">
+            <connections>
+                <outlet property="tabelView" destination="mCv-qn-dwL" id="LH2-n8-aYY"/>
+                <outlet property="top_button" destination="sbe-k6-Yfl" id="24g-TW-6kM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mCv-qn-dwL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="AQM-9l-6wP"/>
+                        <outlet property="delegate" destination="-1" id="JUN-qA-efA"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbe-k6-Yfl">
+                    <rect key="frame" x="0.0" y="624" width="375" height="43"/>
+                    <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="uNf-KO-0pi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="这是几个button"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="geP-GQ-vOa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sbe-k6-Yfl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FPt-Sv-kgc"/>
+                <constraint firstAttribute="trailing" secondItem="sbe-k6-Yfl" secondAttribute="trailing" id="P7y-rZ-LwP"/>
+                <constraint firstItem="mCv-qn-dwL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Yu6-zc-PoG"/>
+                <constraint firstAttribute="trailing" secondItem="mCv-qn-dwL" secondAttribute="trailing" id="ZzF-cM-e1G"/>
+                <constraint firstAttribute="bottom" secondItem="sbe-k6-Yfl" secondAttribute="bottom" id="bzd-8H-Q25"/>
+                <constraint firstAttribute="bottom" secondItem="mCv-qn-dwL" secondAttribute="bottom" id="pMF-cy-i9H"/>
+                <constraint firstItem="mCv-qn-dwL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xMy-8e-vYR"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="210.5" y="342.5"/>
+        </view>
+    </objects>
+</document>
